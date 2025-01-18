@@ -21,6 +21,7 @@ function SetExample3() {
         name="color"
         onChange={() => setColor("Green")}
       ></input>
+      <input type="checkbox"></input>
       <p style={{ color: color }}>Example</p>
     </div>
   );
