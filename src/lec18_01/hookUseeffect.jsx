@@ -12,8 +12,6 @@ function Apisimulator() {
   const [name, setName] = React.useState("wait...");
   const [id, setId] = React.useState("wait...");
   const [hobbies, setHobbies] = React.useState([]);
-  const [countdown, setCountdown] = React.useState(10); // Countdown starts at 10
-  const [timer, setTimer] = React.useState(0); // Timer starts at 0
 
   // Fetch user data on component mount
   React.useEffect(() => {
@@ -25,22 +23,6 @@ function Apisimulator() {
   }, []);
 
   // Countdown timer
-  React.useEffect(() => {
-    const countdownInterval = setInterval(() => {
-      setCountdown((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-
-    return () => clearInterval(countdownInterval); // Cleanup on unmount
-  }, []);
-
-  // Incrementing timer
-  React.useEffect(() => {
-    const timerInterval = setInterval(() => {
-      setTimer((prev) => prev + 1);
-    }, 1000);
-
-    return () => clearInterval(timerInterval); // Cleanup on unmount
-  }, []);
 
   return (
     <div>
@@ -53,8 +35,6 @@ function Apisimulator() {
           <li key={index}>{hobby}</li>
         ))}
       </ul>
-      <h3>Countdown: {countdown}</h3>
-      <h3>Timer: {timer}</h3>
     </div>
   );
 }
@@ -64,3 +44,4 @@ export default Apisimulator;
 // implement counterdown/plus timer
 // pass array of strings as argument
 //convert array to unordered list
+//list of 4 img : change images at 4 sec interval
