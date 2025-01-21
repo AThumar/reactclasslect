@@ -8,7 +8,8 @@ import { createRoot } from "react-dom/client";
 // import SetExample3 from "./SetExample3.jsx";
 // import Apisimulator from "./lec18_01/hookUseeffect.jsx";
 // import App from "./ex.jsx";
-import ImageChanger from "./lec20_01/imagechanger.jsx";
+// import ImageChanger from "./lec20_01/imagechanger.jsx";
+import Conditional from "./lec21_01/customcom.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")).render(
     {/* <App /> */}
     {/* <Apisimulator /> */}
     {/* <App /> */}
-    <ImageChanger />
+    {/* <ImageChanger /> */}
+    <Conditional />
   </StrictMode>
 );
