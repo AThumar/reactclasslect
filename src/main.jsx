@@ -9,8 +9,8 @@ import { createRoot } from "react-dom/client";
 // import Apisimulator from "./lec18_01/hookUseeffect.jsx";
 // import App from "./ex.jsx";
 // import ImageChanger from "./lec20_01/imagechanger.jsx";
-import Conditional from "./lec21_01/customcom.jsx";
-
+// import Conditional from "./lec21_01/customcom.jsx";
+import RegistrationForm from "./lec21_01/registration.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <AppFirst /> */}
@@ -22,6 +22,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Apisimulator /> */}
     {/* <App /> */}
     {/* <ImageChanger /> */}
-    <Conditional />
+    {/* <Conditional /> */}
+    <RegistrationForm />
   </StrictMode>
 );
